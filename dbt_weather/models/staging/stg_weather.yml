@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg_weather
+    description: "Cleaned hourly weather data from Open-Meteo API for 5 Romanian cities"
+    columns:
+      - name: city
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ["Bucharest", "Cluj-Napoca", "Iasi", "Timisoara", "Constanta"]
+      - name: reading_timestamp
+        tests:
+          - not_null
+      - name: temperature_c
+        tests:
+          - not_null
