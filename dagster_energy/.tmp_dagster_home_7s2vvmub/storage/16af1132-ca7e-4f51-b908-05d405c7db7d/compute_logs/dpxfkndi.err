@@ -1,0 +1,24 @@
+[32m2026-04-28 11:40:31 +0300[0m - dagster - [34mDEBUG[0m - energy_pipeline_job - 16af1132-ca7e-4f51-b908-05d405c7db7d - 28491 - LOGS_CAPTURED - Started capturing logs in process (pid: 28491).
+[32m2026-04-28 11:40:31 +0300[0m - dagster - [34mDEBUG[0m - energy_pipeline_job - 16af1132-ca7e-4f51-b908-05d405c7db7d - 28491 - mart_energy_daily - STEP_START - Started execution of step "mart_energy_daily".
+[32m2026-04-28 11:40:31 +0300[0m - dagster - [34mINFO[0m - energy_pipeline_job - 16af1132-ca7e-4f51-b908-05d405c7db7d - mart_energy_daily - 📊 Running dbt mart model...
+[32m2026-04-28 11:40:35 +0300[0m - dagster - [34mINFO[0m - energy_pipeline_job - 16af1132-ca7e-4f51-b908-05d405c7db7d - mart_energy_daily - [0m08:40:32  Running with dbt=1.11.8
+[0m08:40:34  Registered adapter: duckdb=1.10.1
+[0m08:40:34  Found 2 models, 8 data tests, 476 macros
+[0m08:40:34  
+[0m08:40:34  Concurrency: 1 threads (target='dev')
+[0m08:40:34  
+[0m08:40:34  1 of 1 START sql table model marts.mart_energy_daily ........................... [RUN]
+[0m08:40:34  1 of 1 OK created sql table model marts.mart_energy_daily ...................... [[32mOK[0m in 0.12s]
+[0m08:40:34  
+[0m08:40:34  Finished running 1 table model in 0 hours 0 minutes and 0.24 seconds (0.24s).
+[0m08:40:34  
+[0m08:40:34  [32mCompleted successfully[0m
+[0m08:40:34  
+[0m08:40:34  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+
+[32m2026-04-28 11:40:35 +0300[0m - dagster - [34mINFO[0m - energy_pipeline_job - 16af1132-ca7e-4f51-b908-05d405c7db7d - mart_energy_daily - ✅ Mart ready for Looker Studio
+[32m2026-04-28 11:40:35 +0300[0m - dagster - [34mDEBUG[0m - energy_pipeline_job - 16af1132-ca7e-4f51-b908-05d405c7db7d - 28491 - mart_energy_daily - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+[32m2026-04-28 11:40:35 +0300[0m - dagster - [34mDEBUG[0m - energy_pipeline_job - 16af1132-ca7e-4f51-b908-05d405c7db7d - mart_energy_daily - Writing file at: /home/andrei/de-portfolio/dagster_energy/.tmp_dagster_home_7s2vvmub/storage/mart_energy_daily using PickledObjectFilesystemIOManager...
+[32m2026-04-28 11:40:35 +0300[0m - dagster - [34mDEBUG[0m - energy_pipeline_job - 16af1132-ca7e-4f51-b908-05d405c7db7d - 28491 - mart_energy_daily - ASSET_MATERIALIZATION - Materialized value mart_energy_daily.
+[32m2026-04-28 11:40:35 +0300[0m - dagster - [34mDEBUG[0m - energy_pipeline_job - 16af1132-ca7e-4f51-b908-05d405c7db7d - 28491 - mart_energy_daily - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2026-04-28 11:40:35 +0300[0m - dagster - [34mDEBUG[0m - energy_pipeline_job - 16af1132-ca7e-4f51-b908-05d405c7db7d - 28491 - mart_energy_daily - STEP_SUCCESS - Finished execution of step "mart_energy_daily" in 3.65s.

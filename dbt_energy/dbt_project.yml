@@ -1,0 +1,21 @@
+name: dbt_energy
+version: '1.0.0'
+config-version: 2
+
+profile: dbt_energy
+
+model-paths: ["models"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  dbt_energy:
+    staging:
+      +schema: staging
+      +materialized: view      # staging = views (lightweight)
+    marts:
+      +schema: marts
+      +materialized: table     # marts = tables (query-ready)

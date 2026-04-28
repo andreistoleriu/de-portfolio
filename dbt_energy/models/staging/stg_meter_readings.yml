@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: stg_meter_readings
+    description: "Cleaned hourly smart meter readings from raw dlt ingestion"
+    columns:
+      - name: reading_id
+        description: "Unique identifier per reading"
+        tests:
+          - unique
+          - not_null
+
+      - name: site_id
+        description: "Smart meter site identifier"
+        tests:
+          - not_null
+
+      - name: consumption_kwh
+        description: "Energy consumed in kilowatt-hours"
+        tests:
+          - not_null
+
+      - name: site_type
+        description: "Type of site"
+        tests:
+          - accepted_values:
+              arguments:
+                values: ["residential", "commercial", "industrial"]

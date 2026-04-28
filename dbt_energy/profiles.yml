@@ -1,0 +1,7 @@
+dbt_energy:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: /home/andrei/de-portfolio/data/processed/energy.duckdb
+      schema: main

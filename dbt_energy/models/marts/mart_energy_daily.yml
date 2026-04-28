@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: mart_energy_daily
+    description: "Daily energy consumption aggregated per site - ready for Looker Studio"
+    columns:
+      - name: reading_date
+        description: "Date of readings"
+        tests:
+          - not_null
+
+      - name: total_kwh
+        description: "Total energy consumed that day"
+        tests:
+          - not_null
+
+      - name: total_cost_eur
+        description: "Total cost in euros"
+        tests:
+          - not_null

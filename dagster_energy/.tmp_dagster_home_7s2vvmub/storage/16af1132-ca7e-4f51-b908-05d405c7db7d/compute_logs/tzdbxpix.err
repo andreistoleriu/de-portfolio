@@ -1,0 +1,16 @@
+[32m2026-04-28 11:40:21 +0300[0m - dagster - [34mDEBUG[0m - energy_pipeline_job - 16af1132-ca7e-4f51-b908-05d405c7db7d - 27962 - LOGS_CAPTURED - Started capturing logs in process (pid: 27962).
+[32m2026-04-28 11:40:21 +0300[0m - dagster - [34mDEBUG[0m - energy_pipeline_job - 16af1132-ca7e-4f51-b908-05d405c7db7d - 27962 - raw_meter_readings - STEP_START - Started execution of step "raw_meter_readings".
+[32m2026-04-28 11:40:21 +0300[0m - dagster - [34mINFO[0m - energy_pipeline_job - 16af1132-ca7e-4f51-b908-05d405c7db7d - raw_meter_readings - 🔌 Starting dlt ingestion...
+[32m2026-04-28 11:40:24 +0300[0m - dagster - [34mINFO[0m - energy_pipeline_job - 16af1132-ca7e-4f51-b908-05d405c7db7d - raw_meter_readings - 🔌 Running energy pipeline...
+✅ Done: Pipeline energy_pipeline load step completed in 0.47 seconds
+1 load package(s) were loaded to destination duckdb and into dataset raw_energy
+The duckdb destination used duckdb:////home/andrei/de-portfolio/data/processed/energy.duckdb location to store data
+Load package 1777365623.4204302 is LOADED and contains no failed jobs
+📊 Rows loaded:   3,600
+
+[32m2026-04-28 11:40:24 +0300[0m - dagster - [34mINFO[0m - energy_pipeline_job - 16af1132-ca7e-4f51-b908-05d405c7db7d - raw_meter_readings - ✅ Raw meter readings loaded
+[32m2026-04-28 11:40:24 +0300[0m - dagster - [34mDEBUG[0m - energy_pipeline_job - 16af1132-ca7e-4f51-b908-05d405c7db7d - 27962 - raw_meter_readings - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+[32m2026-04-28 11:40:24 +0300[0m - dagster - [34mDEBUG[0m - energy_pipeline_job - 16af1132-ca7e-4f51-b908-05d405c7db7d - raw_meter_readings - Writing file at: /home/andrei/de-portfolio/dagster_energy/.tmp_dagster_home_7s2vvmub/storage/raw_meter_readings using PickledObjectFilesystemIOManager...
+[32m2026-04-28 11:40:24 +0300[0m - dagster - [34mDEBUG[0m - energy_pipeline_job - 16af1132-ca7e-4f51-b908-05d405c7db7d - 27962 - raw_meter_readings - ASSET_MATERIALIZATION - Materialized value raw_meter_readings.
+[32m2026-04-28 11:40:24 +0300[0m - dagster - [34mDEBUG[0m - energy_pipeline_job - 16af1132-ca7e-4f51-b908-05d405c7db7d - 27962 - raw_meter_readings - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2026-04-28 11:40:24 +0300[0m - dagster - [34mDEBUG[0m - energy_pipeline_job - 16af1132-ca7e-4f51-b908-05d405c7db7d - 27962 - raw_meter_readings - STEP_SUCCESS - Finished execution of step "raw_meter_readings" in 2.84s.

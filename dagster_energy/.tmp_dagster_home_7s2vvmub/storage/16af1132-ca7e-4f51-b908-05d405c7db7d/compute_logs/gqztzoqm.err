@@ -1,0 +1,24 @@
+[32m2026-04-28 11:40:26 +0300[0m - dagster - [34mDEBUG[0m - energy_pipeline_job - 16af1132-ca7e-4f51-b908-05d405c7db7d - 28233 - LOGS_CAPTURED - Started capturing logs in process (pid: 28233).
+[32m2026-04-28 11:40:26 +0300[0m - dagster - [34mDEBUG[0m - energy_pipeline_job - 16af1132-ca7e-4f51-b908-05d405c7db7d - 28233 - stg_meter_readings - STEP_START - Started execution of step "stg_meter_readings".
+[32m2026-04-28 11:40:26 +0300[0m - dagster - [34mINFO[0m - energy_pipeline_job - 16af1132-ca7e-4f51-b908-05d405c7db7d - stg_meter_readings - 🔧 Running dbt staging model...
+[32m2026-04-28 11:40:30 +0300[0m - dagster - [34mINFO[0m - energy_pipeline_job - 16af1132-ca7e-4f51-b908-05d405c7db7d - stg_meter_readings - [0m08:40:28  Running with dbt=1.11.8
+[0m08:40:28  Registered adapter: duckdb=1.10.1
+[0m08:40:28  Found 2 models, 8 data tests, 476 macros
+[0m08:40:28  
+[0m08:40:28  Concurrency: 1 threads (target='dev')
+[0m08:40:28  
+[0m08:40:28  1 of 1 START sql view model staging.stg_meter_readings ......................... [RUN]
+[0m08:40:29  1 of 1 OK created sql view model staging.stg_meter_readings .................... [[32mOK[0m in 0.09s]
+[0m08:40:29  
+[0m08:40:29  Finished running 1 view model in 0 hours 0 minutes and 0.21 seconds (0.21s).
+[0m08:40:29  
+[0m08:40:29  [32mCompleted successfully[0m
+[0m08:40:29  
+[0m08:40:29  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+
+[32m2026-04-28 11:40:30 +0300[0m - dagster - [34mINFO[0m - energy_pipeline_job - 16af1132-ca7e-4f51-b908-05d405c7db7d - stg_meter_readings - ✅ Staging model ready
+[32m2026-04-28 11:40:30 +0300[0m - dagster - [34mDEBUG[0m - energy_pipeline_job - 16af1132-ca7e-4f51-b908-05d405c7db7d - 28233 - stg_meter_readings - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+[32m2026-04-28 11:40:30 +0300[0m - dagster - [34mDEBUG[0m - energy_pipeline_job - 16af1132-ca7e-4f51-b908-05d405c7db7d - stg_meter_readings - Writing file at: /home/andrei/de-portfolio/dagster_energy/.tmp_dagster_home_7s2vvmub/storage/stg_meter_readings using PickledObjectFilesystemIOManager...
+[32m2026-04-28 11:40:30 +0300[0m - dagster - [34mDEBUG[0m - energy_pipeline_job - 16af1132-ca7e-4f51-b908-05d405c7db7d - 28233 - stg_meter_readings - ASSET_MATERIALIZATION - Materialized value stg_meter_readings.
+[32m2026-04-28 11:40:30 +0300[0m - dagster - [34mDEBUG[0m - energy_pipeline_job - 16af1132-ca7e-4f51-b908-05d405c7db7d - 28233 - stg_meter_readings - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2026-04-28 11:40:30 +0300[0m - dagster - [34mDEBUG[0m - energy_pipeline_job - 16af1132-ca7e-4f51-b908-05d405c7db7d - 28233 - stg_meter_readings - STEP_SUCCESS - Finished execution of step "stg_meter_readings" in 3.89s.
