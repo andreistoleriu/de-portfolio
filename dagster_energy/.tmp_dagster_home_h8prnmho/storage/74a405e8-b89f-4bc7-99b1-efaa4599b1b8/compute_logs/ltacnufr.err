@@ -1,0 +1,28 @@
+[32m2026-04-28 15:58:52 +0300[0m - dagster - [34mDEBUG[0m - ecommerce_pipeline_job - 74a405e8-b89f-4bc7-99b1-efaa4599b1b8 - 399952 - LOGS_CAPTURED - Started capturing logs in process (pid: 399952).
+[32m2026-04-28 15:58:52 +0300[0m - dagster - [34mDEBUG[0m - ecommerce_pipeline_job - 74a405e8-b89f-4bc7-99b1-efaa4599b1b8 - 399952 - stg_ecommerce - STEP_START - Started execution of step "stg_ecommerce".
+[32m2026-04-28 15:58:52 +0300[0m - dagster - [34mINFO[0m - ecommerce_pipeline_job - 74a405e8-b89f-4bc7-99b1-efaa4599b1b8 - stg_ecommerce - 🔧 Running dbt staging models...
+[32m2026-04-28 15:58:55 +0300[0m - dagster - [34mINFO[0m - ecommerce_pipeline_job - 74a405e8-b89f-4bc7-99b1-efaa4599b1b8 - stg_ecommerce - [0m12:58:53  Running with dbt=1.11.8
+[0m12:58:54  Registered adapter: duckdb=1.10.1
+[0m12:58:54  Found 5 models, 8 data tests, 476 macros
+[0m12:58:54  
+[0m12:58:54  Concurrency: 1 threads (target='dev')
+[0m12:58:54  
+[0m12:58:54  1 of 3 START sql view model staging.stg_customers .............................. [RUN]
+[0m12:58:54  1 of 3 OK created sql view model staging.stg_customers ......................... [[32mOK[0m in 0.08s]
+[0m12:58:54  2 of 3 START sql view model staging.stg_orders ................................. [RUN]
+[0m12:58:54  2 of 3 OK created sql view model staging.stg_orders ............................ [[32mOK[0m in 0.04s]
+[0m12:58:54  3 of 3 START sql view model staging.stg_products ............................... [RUN]
+[0m12:58:55  3 of 3 OK created sql view model staging.stg_products .......................... [[32mOK[0m in 0.04s]
+[0m12:58:55  
+[0m12:58:55  Finished running 3 view models in 0 hours 0 minutes and 0.28 seconds (0.28s).
+[0m12:58:55  
+[0m12:58:55  [32mCompleted successfully[0m
+[0m12:58:55  
+[0m12:58:55  Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+
+[32m2026-04-28 15:58:55 +0300[0m - dagster - [34mINFO[0m - ecommerce_pipeline_job - 74a405e8-b89f-4bc7-99b1-efaa4599b1b8 - stg_ecommerce - ✅ Staging models ready
+[32m2026-04-28 15:58:55 +0300[0m - dagster - [34mDEBUG[0m - ecommerce_pipeline_job - 74a405e8-b89f-4bc7-99b1-efaa4599b1b8 - 399952 - stg_ecommerce - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+[32m2026-04-28 15:58:56 +0300[0m - dagster - [34mDEBUG[0m - ecommerce_pipeline_job - 74a405e8-b89f-4bc7-99b1-efaa4599b1b8 - stg_ecommerce - Writing file at: /home/andrei/de-portfolio/dagster_energy/.tmp_dagster_home_h8prnmho/storage/stg_ecommerce using PickledObjectFilesystemIOManager...
+[32m2026-04-28 15:58:56 +0300[0m - dagster - [34mDEBUG[0m - ecommerce_pipeline_job - 74a405e8-b89f-4bc7-99b1-efaa4599b1b8 - 399952 - stg_ecommerce - ASSET_MATERIALIZATION - Materialized value stg_ecommerce.
+[32m2026-04-28 15:58:56 +0300[0m - dagster - [34mDEBUG[0m - ecommerce_pipeline_job - 74a405e8-b89f-4bc7-99b1-efaa4599b1b8 - 399952 - stg_ecommerce - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2026-04-28 15:58:56 +0300[0m - dagster - [34mDEBUG[0m - ecommerce_pipeline_job - 74a405e8-b89f-4bc7-99b1-efaa4599b1b8 - 399952 - stg_ecommerce - STEP_SUCCESS - Finished execution of step "stg_ecommerce" in 3.8s.

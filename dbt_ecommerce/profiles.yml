@@ -1,0 +1,7 @@
+dbt_ecommerce:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: /home/andrei/de-portfolio/data/processed/ecommerce.duckdb
+      schema: main

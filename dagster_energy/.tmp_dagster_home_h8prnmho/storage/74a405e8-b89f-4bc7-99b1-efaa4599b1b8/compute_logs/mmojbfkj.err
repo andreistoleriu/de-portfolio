@@ -1,0 +1,26 @@
+[32m2026-04-28 15:58:57 +0300[0m - dagster - [34mDEBUG[0m - ecommerce_pipeline_job - 74a405e8-b89f-4bc7-99b1-efaa4599b1b8 - 400204 - LOGS_CAPTURED - Started capturing logs in process (pid: 400204).
+[32m2026-04-28 15:58:57 +0300[0m - dagster - [34mDEBUG[0m - ecommerce_pipeline_job - 74a405e8-b89f-4bc7-99b1-efaa4599b1b8 - 400204 - marts_ecommerce - STEP_START - Started execution of step "marts_ecommerce".
+[32m2026-04-28 15:58:57 +0300[0m - dagster - [34mINFO[0m - ecommerce_pipeline_job - 74a405e8-b89f-4bc7-99b1-efaa4599b1b8 - marts_ecommerce - 📊 Running dbt mart models...
+[32m2026-04-28 15:59:00 +0300[0m - dagster - [34mINFO[0m - ecommerce_pipeline_job - 74a405e8-b89f-4bc7-99b1-efaa4599b1b8 - marts_ecommerce - [0m12:58:58  Running with dbt=1.11.8
+[0m12:58:58  Registered adapter: duckdb=1.10.1
+[0m12:58:59  Found 5 models, 8 data tests, 476 macros
+[0m12:58:59  
+[0m12:58:59  Concurrency: 1 threads (target='dev')
+[0m12:58:59  
+[0m12:58:59  1 of 2 START sql table model marts.mart_customer_segments ...................... [RUN]
+[0m12:58:59  1 of 2 OK created sql table model marts.mart_customer_segments ................. [[32mOK[0m in 0.11s]
+[0m12:58:59  2 of 2 START sql table model marts.mart_revenue_daily .......................... [RUN]
+[0m12:58:59  2 of 2 OK created sql table model marts.mart_revenue_daily ..................... [[32mOK[0m in 0.05s]
+[0m12:58:59  
+[0m12:58:59  Finished running 2 table models in 0 hours 0 minutes and 0.27 seconds (0.27s).
+[0m12:58:59  
+[0m12:58:59  [32mCompleted successfully[0m
+[0m12:58:59  
+[0m12:58:59  Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+
+[32m2026-04-28 15:59:00 +0300[0m - dagster - [34mINFO[0m - ecommerce_pipeline_job - 74a405e8-b89f-4bc7-99b1-efaa4599b1b8 - marts_ecommerce - ✅ Marts ready for Looker Studio
+[32m2026-04-28 15:59:00 +0300[0m - dagster - [34mDEBUG[0m - ecommerce_pipeline_job - 74a405e8-b89f-4bc7-99b1-efaa4599b1b8 - 400204 - marts_ecommerce - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+[32m2026-04-28 15:59:00 +0300[0m - dagster - [34mDEBUG[0m - ecommerce_pipeline_job - 74a405e8-b89f-4bc7-99b1-efaa4599b1b8 - marts_ecommerce - Writing file at: /home/andrei/de-portfolio/dagster_energy/.tmp_dagster_home_h8prnmho/storage/marts_ecommerce using PickledObjectFilesystemIOManager...
+[32m2026-04-28 15:59:00 +0300[0m - dagster - [34mDEBUG[0m - ecommerce_pipeline_job - 74a405e8-b89f-4bc7-99b1-efaa4599b1b8 - 400204 - marts_ecommerce - ASSET_MATERIALIZATION - Materialized value marts_ecommerce.
+[32m2026-04-28 15:59:00 +0300[0m - dagster - [34mDEBUG[0m - ecommerce_pipeline_job - 74a405e8-b89f-4bc7-99b1-efaa4599b1b8 - 400204 - marts_ecommerce - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2026-04-28 15:59:00 +0300[0m - dagster - [34mDEBUG[0m - ecommerce_pipeline_job - 74a405e8-b89f-4bc7-99b1-efaa4599b1b8 - 400204 - marts_ecommerce - STEP_SUCCESS - Finished execution of step "marts_ecommerce" in 3.48s.
