@@ -103,3 +103,32 @@ Happy modeling!
 [0m16:06:50.641147 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7682e0ad7b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7682e012f010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7682df971ae0>]}
 [0m16:06:50.641494 [debug] [MainThread]: Flushing usage events
 [0m16:06:51.229403 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:42:17.907028 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73bd7229bb20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73bd71088610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73bd710885b0>]}
+
+
+============================== 12:42:17.910438 | 42826822-fa7c-4e01-8609-52896ad003ae ==============================
+[0m12:42:17.910438 [info ] [MainThread]: Running with dbt=1.11.8
+[0m12:42:17.910958 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'invocation_command': 'dbt init dbt_llm', 'cache_selected_only': 'False', 'debug': 'False', 'fail_fast': 'False', 'quiet': 'False', 'profiles_dir': '/home/andrei/.dbt', 'version_check': 'True', 'no_print': 'None', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'write_json': 'True', 'introspect': 'True', 'empty': 'None', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'warn_error': 'None', 'printer_width': '80', 'log_path': 'logs', 'log_format': 'default', 'target_path': 'None', 'use_colors': 'True'}
+[0m12:42:17.924211 [debug] [MainThread]: Starter project path: /home/andrei/de-portfolio/venv/lib/python3.10/site-packages/dbt/include/starter_project
+[0m12:42:17.931913 [info ] [MainThread]: 
+Your new dbt project "dbt_llm" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m12:42:17.932381 [info ] [MainThread]: Setting up your profile.
+[0m12:42:37.961564 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 20.121214, "process_in_blocks": "55032", "process_kernel_time": 0.247461, "process_mem_max_rss": "129928", "process_out_blocks": "80", "process_user_time": 1.167193}
+[0m12:42:37.962165 [debug] [MainThread]: Command `dbt init` succeeded at 12:42:37.962059 after 20.12 seconds
+[0m12:42:37.962618 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73bd7229bb20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73bd7184b010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73bd71088580>]}
+[0m12:42:37.962993 [debug] [MainThread]: Flushing usage events
+[0m12:42:38.555395 [debug] [MainThread]: An error was encountered while trying to flush usage events

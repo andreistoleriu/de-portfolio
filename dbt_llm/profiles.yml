@@ -1,0 +1,7 @@
+dbt_llm:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: /home/andrei/de-portfolio/data/processed/llm_logs.duckdb
+      schema: main

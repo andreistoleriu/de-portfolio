@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_llm_logs
+    description: "Cleaned LLM logs from Kafka consumer"
+    columns:
+      - name: user_id
+        tests:
+          - not_null
+      - name: cost_usd
+        tests:
+          - not_null
+      - name: latency_category
+        tests:
+          - accepted_values:
+              arguments:
+                values: ["fast", "medium", "slow"]
+      - name: total_tokens
+        tests:
+          - not_null
