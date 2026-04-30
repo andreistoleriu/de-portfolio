@@ -1,0 +1,30 @@
+[32m2026-04-29 14:08:49 +0300[0m - dagster - [34mDEBUG[0m - llm_observability_job - f64a1740-87f8-44f0-82a1-c7fe970ad8b4 - 35782 - LOGS_CAPTURED - Started capturing logs in process (pid: 35782).
+[32m2026-04-29 14:08:49 +0300[0m - dagster - [34mDEBUG[0m - llm_observability_job - f64a1740-87f8-44f0-82a1-c7fe970ad8b4 - 35782 - llm_dbt_models - STEP_START - Started execution of step "llm_dbt_models".
+[32m2026-04-29 14:08:49 +0300[0m - dagster - [34mINFO[0m - llm_observability_job - f64a1740-87f8-44f0-82a1-c7fe970ad8b4 - llm_dbt_models - 🔧 Rulez modele dbt...
+[32m2026-04-29 14:08:53 +0300[0m - dagster - [34mINFO[0m - llm_observability_job - f64a1740-87f8-44f0-82a1-c7fe970ad8b4 - llm_dbt_models - [0m11:08:50  Running with dbt=1.11.8
+[0m11:08:51  Registered adapter: duckdb=1.10.1
+[0m11:08:51  Found 4 models, 4 data tests, 476 macros
+[0m11:08:51  
+[0m11:08:51  Concurrency: 1 threads (target='dev')
+[0m11:08:51  
+[0m11:08:51  1 of 4 START sql view model staging.stg_llm_logs ............................... [RUN]
+[0m11:08:51  1 of 4 OK created sql view model staging.stg_llm_logs .......................... [[32mOK[0m in 0.09s]
+[0m11:08:51  2 of 4 START sql table model marts.mart_cost_per_user .......................... [RUN]
+[0m11:08:52  2 of 4 OK created sql table model marts.mart_cost_per_user ..................... [[32mOK[0m in 0.08s]
+[0m11:08:52  3 of 4 START sql table model marts.mart_hourly_activity ........................ [RUN]
+[0m11:08:52  3 of 4 OK created sql table model marts.mart_hourly_activity ................... [[32mOK[0m in 0.05s]
+[0m11:08:52  4 of 4 START sql table model marts.mart_latency_analysis ....................... [RUN]
+[0m11:08:52  4 of 4 OK created sql table model marts.mart_latency_analysis .................. [[32mOK[0m in 0.05s]
+[0m11:08:52  
+[0m11:08:52  Finished running 3 table models, 1 view model in 0 hours 0 minutes and 0.41 seconds (0.41s).
+[0m11:08:52  
+[0m11:08:52  [32mCompleted successfully[0m
+[0m11:08:52  
+[0m11:08:52  Done. PASS=4 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=4
+
+[32m2026-04-29 14:08:53 +0300[0m - dagster - [34mINFO[0m - llm_observability_job - f64a1740-87f8-44f0-82a1-c7fe970ad8b4 - llm_dbt_models - ✅ Modele dbt actualizate
+[32m2026-04-29 14:08:53 +0300[0m - dagster - [34mDEBUG[0m - llm_observability_job - f64a1740-87f8-44f0-82a1-c7fe970ad8b4 - 35782 - llm_dbt_models - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+[32m2026-04-29 14:08:53 +0300[0m - dagster - [34mDEBUG[0m - llm_observability_job - f64a1740-87f8-44f0-82a1-c7fe970ad8b4 - llm_dbt_models - Writing file at: /home/andrei/de-portfolio/dagster_energy/.tmp_dagster_home_1z6l7jom/storage/llm_dbt_models using PickledObjectFilesystemIOManager...
+[32m2026-04-29 14:08:53 +0300[0m - dagster - [34mDEBUG[0m - llm_observability_job - f64a1740-87f8-44f0-82a1-c7fe970ad8b4 - 35782 - llm_dbt_models - ASSET_MATERIALIZATION - Materialized value llm_dbt_models.
+[32m2026-04-29 14:08:53 +0300[0m - dagster - [34mDEBUG[0m - llm_observability_job - f64a1740-87f8-44f0-82a1-c7fe970ad8b4 - 35782 - llm_dbt_models - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2026-04-29 14:08:53 +0300[0m - dagster - [34mDEBUG[0m - llm_observability_job - f64a1740-87f8-44f0-82a1-c7fe970ad8b4 - 35782 - llm_dbt_models - STEP_SUCCESS - Finished execution of step "llm_dbt_models" in 4.13s.

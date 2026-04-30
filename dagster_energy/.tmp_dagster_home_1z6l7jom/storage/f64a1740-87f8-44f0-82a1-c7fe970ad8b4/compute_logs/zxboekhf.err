@@ -1,0 +1,59 @@
+[32m2026-04-29 14:07:58 +0300[0m - dagster - [34mDEBUG[0m - llm_observability_job - f64a1740-87f8-44f0-82a1-c7fe970ad8b4 - 33549 - LOGS_CAPTURED - Started capturing logs in process (pid: 33549).
+[32m2026-04-29 14:07:58 +0300[0m - dagster - [34mDEBUG[0m - llm_observability_job - f64a1740-87f8-44f0-82a1-c7fe970ad8b4 - 33549 - llm_traffic - STEP_START - Started execution of step "llm_traffic".
+[32m2026-04-29 14:07:58 +0300[0m - dagster - [34mINFO[0m - llm_observability_job - f64a1740-87f8-44f0-82a1-c7fe970ad8b4 - llm_traffic - 🚀 Simulez trafic LLM...
+[32m2026-04-29 14:08:47 +0300[0m - dagster - [34mINFO[0m - llm_observability_job - f64a1740-87f8-44f0-82a1-c7fe970ad8b4 - llm_traffic - 🚀 LLM Observability — Etapa 2 (Kafka Producer)
+📨 Kafka topic: llm_events
+🦙 Model: llama3.2
+
+✅ Conectat la Kafka
+
+
+[1/10]
+  [user_001] Trimit: What is the difference between a data lake and a d...
+  → Trimis in Kafka: user_001 $0.01643
+
+[2/10]
+  [user_002] Trimit: Explain ETL pipeline in simple terms...
+  → Trimis in Kafka: user_002 $0.00849
+
+[3/10]
+  [user_003] Trimit: What is Apache Kafka used for?...
+  → Trimis in Kafka: user_003 $0.01142
+
+[4/10]
+  [user_004] Trimit: How does dbt transform data?...
+  → Trimis in Kafka: user_004 $0.01505
+
+[5/10]
+  [user_005] Trimit: What are the best practices for data quality?...
+  → Trimis in Kafka: user_005 $0.01183
+
+[6/10]
+  [user_001] Trimit: What is DuckDB and why is it popular?...
+  → Trimis in Kafka: user_001 $0.01184
+
+[7/10]
+  [user_003] Trimit: Explain the difference between batch and streaming...
+  → Trimis in Kafka: user_003 $0.01925
+
+[8/10]
+  [user_006] Trimit: What is a data mesh architecture?...
+  → Trimis in Kafka: user_006 $0.01301
+
+[9/10]
+  [user_002] Trimit: How do you handle missing data in a pipeline?...
+  → Trimis in Kafka: user_002 $0.01745
+
+[10/10]
+  [user_005] Trimit: What is the medallion architecture in data enginee...
+  → Trimis in Kafka: user_005 $0.01059
+
+✅ Toate mesajele trimise in Kafka!
+👉 Acum ruleaza consumer-ul pentru a le salva in DuckDB
+
+[32m2026-04-29 14:08:47 +0300[0m - dagster - [34mINFO[0m - llm_observability_job - f64a1740-87f8-44f0-82a1-c7fe970ad8b4 - llm_traffic - ✅ Trafic generat si trimis in Kafka
+[32m2026-04-29 14:08:47 +0300[0m - dagster - [34mDEBUG[0m - llm_observability_job - f64a1740-87f8-44f0-82a1-c7fe970ad8b4 - 33549 - llm_traffic - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+[32m2026-04-29 14:08:47 +0300[0m - dagster - [34mDEBUG[0m - llm_observability_job - f64a1740-87f8-44f0-82a1-c7fe970ad8b4 - llm_traffic - Writing file at: /home/andrei/de-portfolio/dagster_energy/.tmp_dagster_home_1z6l7jom/storage/llm_traffic using PickledObjectFilesystemIOManager...
+[32m2026-04-29 14:08:47 +0300[0m - dagster - [34mDEBUG[0m - llm_observability_job - f64a1740-87f8-44f0-82a1-c7fe970ad8b4 - 33549 - llm_traffic - ASSET_MATERIALIZATION - Materialized value llm_traffic.
+[32m2026-04-29 14:08:47 +0300[0m - dagster - [34mDEBUG[0m - llm_observability_job - f64a1740-87f8-44f0-82a1-c7fe970ad8b4 - 33549 - llm_traffic - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2026-04-29 14:08:47 +0300[0m - dagster - [34mDEBUG[0m - llm_observability_job - f64a1740-87f8-44f0-82a1-c7fe970ad8b4 - 33549 - llm_traffic - STEP_SUCCESS - Finished execution of step "llm_traffic" in 48.93s.

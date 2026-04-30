@@ -1,0 +1,12 @@
+[32m2026-04-29 14:08:54 +0300[0m - dagster - [34mDEBUG[0m - llm_observability_job - f64a1740-87f8-44f0-82a1-c7fe970ad8b4 - 36114 - LOGS_CAPTURED - Started capturing logs in process (pid: 36114).
+[32m2026-04-29 14:08:54 +0300[0m - dagster - [34mDEBUG[0m - llm_observability_job - f64a1740-87f8-44f0-82a1-c7fe970ad8b4 - 36114 - anomaly_check - STEP_START - Started execution of step "anomaly_check".
+[32m2026-04-29 14:08:54 +0300[0m - dagster - [34mINFO[0m - llm_observability_job - f64a1740-87f8-44f0-82a1-c7fe970ad8b4 - anomaly_check - 🔍 Verifică anomalii de cost...
+[32m2026-04-29 14:08:54 +0300[0m - dagster - [34mINFO[0m - llm_observability_job - f64a1740-87f8-44f0-82a1-c7fe970ad8b4 - anomaly_check - 💰 Cost mediu per request: $0.0132
+[32m2026-04-29 14:08:54 +0300[0m - dagster - [34mINFO[0m - llm_observability_job - f64a1740-87f8-44f0-82a1-c7fe970ad8b4 - anomaly_check - 🔥 Cost maxim ultima oră:  $0.0193
+[32m2026-04-29 14:08:55 +0300[0m - dagster - [34mINFO[0m - llm_observability_job - f64a1740-87f8-44f0-82a1-c7fe970ad8b4 - anomaly_check - 👤 Top user: user_003 — $0.0851
+[32m2026-04-29 14:08:55 +0300[0m - dagster - [34mINFO[0m - llm_observability_job - f64a1740-87f8-44f0-82a1-c7fe970ad8b4 - anomaly_check - ✅ Costuri normale — nicio anomalie
+[32m2026-04-29 14:08:55 +0300[0m - dagster - [34mDEBUG[0m - llm_observability_job - f64a1740-87f8-44f0-82a1-c7fe970ad8b4 - 36114 - anomaly_check - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+[32m2026-04-29 14:08:55 +0300[0m - dagster - [34mDEBUG[0m - llm_observability_job - f64a1740-87f8-44f0-82a1-c7fe970ad8b4 - anomaly_check - Writing file at: /home/andrei/de-portfolio/dagster_energy/.tmp_dagster_home_1z6l7jom/storage/anomaly_check using PickledObjectFilesystemIOManager...
+[32m2026-04-29 14:08:55 +0300[0m - dagster - [34mDEBUG[0m - llm_observability_job - f64a1740-87f8-44f0-82a1-c7fe970ad8b4 - 36114 - anomaly_check - ASSET_MATERIALIZATION - Materialized value anomaly_check.
+[32m2026-04-29 14:08:55 +0300[0m - dagster - [34mDEBUG[0m - llm_observability_job - f64a1740-87f8-44f0-82a1-c7fe970ad8b4 - 36114 - anomaly_check - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2026-04-29 14:08:55 +0300[0m - dagster - [34mDEBUG[0m - llm_observability_job - f64a1740-87f8-44f0-82a1-c7fe970ad8b4 - 36114 - anomaly_check - STEP_SUCCESS - Finished execution of step "anomaly_check" in 234ms.
